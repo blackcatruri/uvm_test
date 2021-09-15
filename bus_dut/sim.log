@@ -1,0 +1,85 @@
+Command: /home/scz/sv_test/my_test/bus_dut/./simv -l sim.log +UVM_TESTNAME=my_case0 +UVM_VERBOSITY=MEDIUM
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Sep 14 11:09 2021
+UVM_INFO /home/scz/synopsys/vcs2018/vcs/O-2018.09-SP2/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test my_case0...
+UVM_INFO bus_driver.sv(37) @ 1100000: uvm_test_top.env.bus_agt.drv [bus_driver] begin to drive one pkt
+UVM_INFO my_case0.sv(38) @ 1700000: uvm_test_top.v_sqr@@case0_cfg_vseq [case0_cfg_vseq] invert's initial value is 0
+UVM_INFO bus_driver.sv(37) @ 1700000: uvm_test_top.env.bus_agt.drv [bus_driver] begin to drive one pkt
+UVM_INFO bus_driver.sv(37) @ 2300000: uvm_test_top.env.bus_agt.drv [bus_driver] begin to drive one pkt
+UVM_INFO my_case0.sv(41) @ 2900000: uvm_test_top.v_sqr@@case0_cfg_vseq [case0_cfg_vseq] after set, invert's value is 1
+UVM_INFO bus_driver.sv(37) @ 2900000: uvm_test_top.env.bus_agt.drv [bus_driver] begin to drive one pkt
+UVM_INFO bus_driver.sv(37) @ 3500000: uvm_test_top.env.bus_agt.drv [bus_driver] begin to drive one pkt
+UVM_INFO my_case0.sv(46) @ 4100000: uvm_test_top.v_sqr@@case0_cfg_vseq [case0_cfg_vseq] counter's initial value(FRONTDOOR) is 0
+UVM_INFO bus_driver.sv(37) @ 4100000: uvm_test_top.env.bus_agt.drv [bus_driver] begin to drive one pkt
+UVM_INFO bus_driver.sv(37) @ 4700000: uvm_test_top.env.bus_agt.drv [bus_driver] begin to drive one pkt
+UVM_INFO my_case0.sv(52) @ 5300000: uvm_test_top.v_sqr@@case0_cfg_vseq [case0_cfg_vseq] after poke, counter's value(FRONTDOOR) is fffd
+UVM_INFO my_case0.sv(57) @ 5300000: uvm_test_top.v_sqr@@case0_cfg_vseq [case0_cfg_vseq] after poke, counter's value(BACKDOOR) is fffd
+UVM_INFO bus_driver.sv(37) @ 5300000: uvm_test_top.env.bus_agt.drv [bus_driver] begin to drive one pkt
+UVM_INFO bus_monitor.sv(46) @ 5900000: uvm_test_top.env.bus_agt.mon [bus_monitor] end collect one pkt
+UVM_INFO my_scoreboard.sv(40) @ 281900000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO my_scoreboard.sv(40) @ 424900000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO my_scoreboard.sv(40) @ 598100000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO my_scoreboard.sv(40) @ 737500000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO my_scoreboard.sv(40) @ 1019500000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO my_scoreboard.sv(40) @ 1270100000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO my_scoreboard.sv(40) @ 1489700000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO my_scoreboard.sv(40) @ 1691700000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+UVM_INFO my_scoreboard.sv(40) @ 1809900000: uvm_test_top.env.scb [my_scoreboard] Compare SUCCESSFULLY
+TEST CASE PASSED
+UVM_INFO /home/scz/synopsys/vcs2018/vcs/O-2018.09-SP2/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 2076100000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /home/scz/synopsys/vcs2018/vcs/O-2018.09-SP2/etc/uvm-1.2/base/uvm_report_server.svh(894) @ 2076100000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   26
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[bus_driver]     8
+[bus_monitor]     1
+[case0_cfg_vseq]     5
+[my_scoreboard]     9
+
+$finish called from file "/home/scz/synopsys/vcs2018/vcs/O-2018.09-SP2/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time           2076100000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2076100000 ps
+CPU Time:      0.360 seconds;       Data structure size:   0.6Mb
+Tue Sep 14 11:09:17 2021
