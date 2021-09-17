@@ -12,7 +12,7 @@ all: com sim
 
 com:
 	# vcs -f filelist.f ${TEST_CASE} -timescale=1ns/1ps -ntb_opts uvm-1.2 +vcs+vcdpluson -l com.log
-	vcs -full64 -sverilog -LDFLAGS -Wl,--no-as-needed -debug_all +vcd+vcdpluson -f filelist.f ${TEST_CASE} -timescale=1ns/1ps -ntb_opts uvm-1.2 -l com.log
+	vcs -full64 -sverilog -LDFLAGS -Wl,--no-as-needed -debug_all +vcs+vcdpluson -f filelist.f ${TEST_CASE} -timescale=1ns/1ps -ntb_opts uvm-1.2 -l com.log
 
 sim:
 	./simv -l sim.log +UVM_TESTNAME=${CASE_CLASS} +UVM_VERBOSITY=${UVM_VERBOSITY}
